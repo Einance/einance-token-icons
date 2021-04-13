@@ -1,0 +1,52 @@
+<html5>
+  <head>
+    <title>Einance Token Icons</title>
+    <style>
+      ul > li {
+        width: 80px;
+        text-decoration-style: none;
+      }
+      ul > li > span {
+        display: block;
+        text-align: center;
+      }
+
+      ul > li > img {
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Einance Token Icons</h2>
+    <p>Support Tokens:</p>
+    <ul>
+      <li>
+        <img
+          src="public/tokens/0x1efda4cfb47652d2193430c8da773d0d2dc425f8.png"
+          alt="0x1efda4cfb47652d2193430c8da773d0d2dc425f8"
+        />
+        <span>TUSD: 0x1efda4cfb47652d2193430c8da773d0d2dc425f8</span>
+      </li>
+    </ul>
+
+    <p>Support Icons:</p>
+    <ul>
+      <li>
+        <img src="public/icon/USDT.png" alt="USDT" />
+        <span>USDT</span>
+      </li>
+    </ul>
+    <br />
+    <h3>大小写转换工具</h3>
+    <input type="text" id="inputSource" onchange="transfer()" />
+    <p id="toLowerCase"></p>
+    <p id="toUpperCase"></p>
+    <script>
+      function transfer() {
+        let text = document.getElementById("inputSource").value;
+        document.getElementById("toLowerCase").innerHTML = text.toLowerCase();
+        document.getElementById("toUpperCase").innerHTML = text.toUpperCase();
+      }
+    </script>
+  </body>
+</html5>
